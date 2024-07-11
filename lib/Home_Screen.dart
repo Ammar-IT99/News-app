@@ -38,8 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Setting':
                   selectedCategory==null?
               'News app':
-                      selectedCategory!.id
-              ,
+                      selectedCategory!.id,
               style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
@@ -63,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void onCategoryClick(CategoryDM newSelectedCategory){
      //todo: newSelectedCategory=> user
     selectedCategory=newSelectedCategory;
-    setState(() {
+    setState(( ) {
 
     });
 
