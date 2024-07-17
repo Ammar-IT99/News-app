@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Category/category_Fragment.dart';
-import 'package:news_app/Category/category_details.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/Home_Screen.dart';
 import 'package:news_app/Theme_Data.dart';
 
+import 'my_bloc_observer.dart';
+
 void main() {
+  Bloc.observer = MyBlocObserver();
+  // Use cubits...
   runApp(const MyApp());
 }
 
