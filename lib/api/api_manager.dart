@@ -8,7 +8,7 @@ class ApiManager{
  // https://newsapi.org/v2/top-headlines/sources?apiKey=API_KEY
  // -----------------------------------------------------------
  // a4d63d05ba5f4d2585aea7f6ea32a701
-  static Future<SourceResponse?> getSources(String categoryId) async {
+   Future<SourceResponse?> getSources(String categoryId) async {
     Uri url= Uri.https(ApiConstants.baseUrl,ApiConstants.sourceApi,
     {
       'apiKey' :'a4d63d05ba5f4d2585aea7f6ea32a701',
